@@ -28,7 +28,7 @@ def screen(height, width):
     return paint_window
 
 
-def draw_pencil(paint_window, xp, yp, x, y, color_of_drawing, thickness):
+def draw_line(paint_window, xp, yp, x, y, color_of_drawing, thickness):
 
     cv2.line(paint_window, (xp, yp), (x, y), color_of_drawing, thickness)
     cv2.imshow("OpenCV", paint_window)

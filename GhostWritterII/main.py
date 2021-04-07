@@ -4,22 +4,26 @@ from Draw import Draw_Controller as Dr
 
 
 def get_camera():
+
     while True:
         camera_number = int(input("Select your camera type\n 1 - Default camera (lapTop camera) \n "
                                   "2 - IP Camera \n 3 - Depth Camera\n"))
         if camera_number == 1:
-            camera_type = 0
+            cameraValue = 0
+            cameraConnection=Cc.camera("Laptop")
             break
         elif camera_number == 2:
-            ip = input("Enter your IP Camera: ")  # http://192.168.1.103:8080/video
-            camera_type = ip
+            ip = input("Enter your IP Camera: ")  # http://192.168.43.1:8080/video
+            cameraValue = ip
+            cameraConnection=Cc.camera("IP")
             break
         elif camera_number == 3:
-            camera_type = "Depth"
+            cameraValue = ""
+            cameraConnection=Cc.camera("Depth")
             break
         else:
             print("Invalid Input, Please Enter again correctly\n")
-    return Cc.camera(camera_type)
+    return cameraConnection,cameraValue
 
 
 def get_draw_type():
@@ -38,19 +42,21 @@ def get_draw_type():
 
 def get_model():
     while True:
-        model_number = int(input("Select Model type\n 1 - YOLO_V4 \n 2 - YOLO_V5 \n 3 - MobileNet\n"))
+        model_number = int(input("Select Model type\n 1 - YOLO_V4 \n"))
         if model_number == 1:
             model_type = 1
             break
-        elif model_number == 2:
-            model_type = 2
-            break
-        elif model_number == 3:
-            model_type = 3
-            break
+        # elif model_number == 2:
+        #     model_type = 2
+        #     break
+        # elif model_number == 3:
+        #     model_type = 3
+        #     break
         else:
             print("Invalid Input, Please Enter again correctly\n")
     return model_type
 
 
-Tc.tracking_objects(get_model(), get_camera(), get_draw_type())
+cameraConnection, cameraValue = get_camera()
+
+Tc.tracking_controller(cameraConnection, cameraValue, get_model(), get_draw_type())

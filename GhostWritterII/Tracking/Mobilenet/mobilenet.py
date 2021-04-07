@@ -5,7 +5,7 @@ import os
 import time
 
 
-def mobilenet(camera, draw):
+def tracking_object(camera, draw):
     # Fix Relative path problem
     # Take the model from its destination
     file_dir = os.path.dirname(os.path.realpath('__file__'))  # path which main.py located

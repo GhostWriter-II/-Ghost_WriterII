@@ -5,8 +5,9 @@ from Camera.Laptop_Camera import Laptop_Camera as Lpc
 
 def camera(camera_type):
     if camera_type == "Depth":
-        return Dpc.depth_camera()
-    elif camera_type == 0:
-        return Lpc.lab_camera()
-    else:
-        return Ipc.ip_camera(camera_type)
+        return Dpc
+    elif camera_type == "IP":
+        return Ipc
+    elif camera_type == "Laptop":
+        return Lpc
+

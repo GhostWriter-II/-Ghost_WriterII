@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39d94157-9252-4b49-ae55-b9e132e01f2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tracking/Mobilenet/graph.pbtxt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tracking/YOLO_V4/YOLO_v4_training_last.weights" beforeDir="false" afterPath="$PROJECT_DIR$/Tracking/YOLO_V4/YOLO_v4_training_last.weights" afterDir="false" />
-    </list>
+    <list default="true" id="39d94157-9252-4b49-ae55-b9e132e01f2a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +27,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1nZAcCVXLuz7vEwDQM6CfZy2c4q" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -44,7 +48,14 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Camera/Depth_Camera" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MinaF\Desktop\GP\GhostWritterII\Camera\Depth_Camera" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="Open_CV" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -144,50 +155,20 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="476" y="153" key="#Servers" timestamp="1611964669808">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="476" y="153" key="#Servers/0.0.1536.834@0.0.1536.834" timestamp="1611964669808" />
-    <state x="522" y="219" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612720426588">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="522" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1612720426588" />
-    <state width="1515" height="186" key="GridCell.Tab.0.bottom" timestamp="1612996440856">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="186" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1612996440856" />
-    <state width="1515" height="186" key="GridCell.Tab.0.center" timestamp="1612996440856">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="186" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1612996440856" />
-    <state width="1515" height="186" key="GridCell.Tab.0.left" timestamp="1612996440856">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="186" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1612996440856" />
-    <state width="1515" height="186" key="GridCell.Tab.0.right" timestamp="1612996440856">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="186" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1612996440856" />
-    <state width="1515" height="265" key="GridCell.Tab.1.bottom" timestamp="1612727984862">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1612727984862" />
-    <state width="1515" height="265" key="GridCell.Tab.1.center" timestamp="1612727984862">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1612727984862" />
-    <state width="1515" height="265" key="GridCell.Tab.1.left" timestamp="1612727984862">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1612727984862" />
-    <state width="1515" height="265" key="GridCell.Tab.1.right" timestamp="1612727984862">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1612727984862" />
-    <state x="277" y="62" key="SettingsEditor" timestamp="1612372041902">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1612372041902" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/Mustafa/FCAI/GP/Old/GhostWriterTD/utility.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://E:/Mustafa/FCAI/GP/Old/GhostWriterTD/Trial.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

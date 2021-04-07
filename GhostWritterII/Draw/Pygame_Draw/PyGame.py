@@ -3,25 +3,27 @@ import pygame
 pygame.init()
 
 
-def screen(height, width):
+def screen(width, height):
     size = [height, width]
     r_screen = pygame.display.set_mode(size)
     r_screen.fill((0, 0, 0))
-    pygame.display.set_caption('GP')
+    pygame.display.set_caption('pygame')
 
     return r_screen
 
 
-def clear(height, width):
+def clear(width, height):
+
     size = [height, width]
     r_screen = pygame.display.set_mode(size)
     r_screen.fill((0, 0, 0))
-    pygame.display.set_caption('GP')
+    pygame.display.update()
+
 
     return r_screen
 
 
-def draw_pencil(r_screen, x1, y1, x2, y2, color_of_drawing, thickness):
+def draw_line(r_screen, x1, y1, x2, y2, color_of_drawing, thickness):
     pygame.draw.line(r_screen, color_of_drawing, (x1, y1), (x2, y2), thickness)
 
     pygame.display.flip()
