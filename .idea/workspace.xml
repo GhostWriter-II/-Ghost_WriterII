@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a5505361-6515-4a1f-afef-a93adca1e772" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/GhostWritterII/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Ghost_WriterII.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ghost_WriterII.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GhostWritterII/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/Tracking/YOLO_V4/yolo_v4.py" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/Tracking/YOLO_V4/yolo_v4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,26 +84,53 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1515" height="214" key="GridCell.Tab.0.bottom" timestamp="1611587430454">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1611587430454" />
-    <state width="1515" height="214" key="GridCell.Tab.0.center" timestamp="1611587430454">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="214" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1611587430454" />
-    <state width="1515" height="214" key="GridCell.Tab.0.left" timestamp="1611587430454">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="214" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1611587430454" />
-    <state width="1515" height="214" key="GridCell.Tab.0.right" timestamp="1611587430454">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="214" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1611587430454" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1618059524251">
+    <state x="508" y="236" key="#Notifications" timestamp="1618083824230">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1618059524251" />
+    <state x="508" y="236" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1618083824230" />
+    <state x="467" y="196" key="FileChooserDialogImpl" timestamp="1618087987091">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="467" y="196" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618087987091" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1618095204373">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618095204373" />
+    <state width="1515" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1611587430454" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1618095204373">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618095204373" />
+    <state width="1515" height="214" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1611587430454" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1618095204373">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618095204373" />
+    <state width="1515" height="214" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1611587430454" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1618095204373">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618095204373" />
+    <state width="1515" height="214" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1611587430454" />
+    <state x="195" y="66" key="SettingsEditor" timestamp="1618091758084">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="195" y="66" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1618091758084" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618094423982">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1618094423982" />
   </component>
 </project>

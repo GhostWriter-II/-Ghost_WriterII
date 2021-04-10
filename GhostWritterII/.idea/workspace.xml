@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9266e62a-7521-4221-9b6b-e460851e1df7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/Ghost_WriterII.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Ghost_WriterII.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GhostWritterII.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GhostWritterII.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tracking/YOLO_V4/yolo_v4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tracking/YOLO_V4/yolo_v4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +48,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -87,6 +84,14 @@
       <option name="presentableId" value="Default" />
       <updated>1618079682918</updated>
     </task>
+    <task id="LOCAL-00001" summary="adding opencl in the code">
+      <created>1618083510795</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1618083510795</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +104,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding opencl in the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding opencl in the code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1618079748510">
@@ -113,30 +123,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1618080392616" />
-    <state x="255" y="142" key="FileChooserDialogImpl" timestamp="1618081795079">
+    <state x="255" y="142" key="FileChooserDialogImpl" timestamp="1618090701422">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="255" y="142" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618081795079" />
-    <state width="1515" height="89" key="GridCell.Tab.0.bottom" timestamp="1618083102081">
+    <state x="255" y="142" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618090701422" />
+    <state width="1515" height="259" key="GridCell.Tab.0.bottom" timestamp="1618083772475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="89" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618083102081" />
-    <state width="1515" height="89" key="GridCell.Tab.0.center" timestamp="1618083102081">
+    <state width="1515" height="259" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618083772475" />
+    <state width="1515" height="259" key="GridCell.Tab.0.center" timestamp="1618083772475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="89" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618083102081" />
-    <state width="1515" height="89" key="GridCell.Tab.0.left" timestamp="1618083102081">
+    <state width="1515" height="259" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618083772475" />
+    <state width="1515" height="259" key="GridCell.Tab.0.left" timestamp="1618083772474">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="89" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618083102081" />
-    <state width="1515" height="89" key="GridCell.Tab.0.right" timestamp="1618083102081">
+    <state width="1515" height="259" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618083772474" />
+    <state width="1515" height="259" key="GridCell.Tab.0.right" timestamp="1618083772475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="89" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618083102081" />
-    <state x="253" y="57" key="SettingsEditor" timestamp="1618082465458">
+    <state width="1515" height="259" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618083772475" />
+    <state x="253" y="57" key="SettingsEditor" timestamp="1618083757952">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="253" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1618082465458" />
+    <state x="253" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1618083757952" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1618083516119">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618083516119" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618080428555">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

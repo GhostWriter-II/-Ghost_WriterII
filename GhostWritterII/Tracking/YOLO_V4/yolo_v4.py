@@ -3,7 +3,7 @@ import time
 import os
 def object_detaction(net,output_layers,frame,width,height):
     # Detecting objects
-    blob = cv2.dnn.blobFromImage(frame, 0.00392, (320, 320), (0, 0, 0), True, crop=False)
+    blob = cv2.dnn.blobFromImage(frame, 0.00392, (416, 416), (0, 0, 0), True, crop=False)
     net.setInput(blob)
     outs = net.forward(output_layers)
     confidences = []
@@ -29,7 +29,7 @@ def object_detaction(net,output_layers,frame,width,height):
 def tracking_object(cameraConnection,cameraValue,draw):
 
     file_dir = os.path.dirname(os.path.realpath('__file__'))
-    model = os.path.join(file_dir, 'Tracking\\YOLO_V4\\YOLO_v4_training_last2.weights')
+    model = os.path.join(file_dir, 'Tracking\\YOLO_V4\\YOLO_v4_training_last.weights')
     model_configuration = os.path.join(file_dir, 'Tracking\\YOLO_V4\\YOLO_v4-tiny.cfg')
     net = cv2.dnn.readNet(model, model_configuration)
 
@@ -45,6 +45,7 @@ def tracking_object(cameraConnection,cameraValue,draw):
     height, width, _ = frame.shape
     screen = draw.screen(height, width)
 
+
     font = cv2.FONT_HERSHEY_PLAIN
     starting_time = time.time()
     frame_id = 0
@@ -58,8 +59,8 @@ def tracking_object(cameraConnection,cameraValue,draw):
     while True:
         frame,depth_frame = cameraConnection.get_frame(camera)
         frame = cv2.resize(frame, (640, 480))
-        #frame=cv2.flip(frame,1)
         #depth_frame=cv2.flip(depth_frame,1)
+        frame=cv2.flip(frame,1)
         frame_id += 1
         #height, width, _ = frame.shape
 
