@@ -5,7 +5,6 @@ def object_detaction(net,output_layers,frame,width,height):
     # Detecting objects
     blob = cv2.dnn.blobFromImage(frame, 0.00392, (320, 320), (0, 0, 0), True, crop=False)
     net.setInput(blob)
-    cv2.dnn.DNN_TARGET_OPENCL
     outs = net.forward(output_layers)
     confidences = []
     boxes = []
@@ -30,12 +29,12 @@ def object_detaction(net,output_layers,frame,width,height):
 def tracking_object(cameraConnection,cameraValue,draw):
 
     file_dir = os.path.dirname(os.path.realpath('__file__'))
-    model = os.path.join(file_dir, 'Tracking\\YOLO_V4\\YOLO_v4_training_last.weights')
+    model = os.path.join(file_dir, 'Tracking\\YOLO_V4\\YOLO_v4_training_last2.weights')
     model_configuration = os.path.join(file_dir, 'Tracking\\YOLO_V4\\YOLO_v4-tiny.cfg')
     net = cv2.dnn.readNet(model, model_configuration)
 
-    # net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
-    # net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
+    net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
+    net.setPreferableTarget(cv2.dnn.DNN_TARGET_OPENCL)
 
     layer_names = net.getLayerNames()
     output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
