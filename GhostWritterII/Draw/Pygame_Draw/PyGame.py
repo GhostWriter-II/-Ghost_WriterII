@@ -36,3 +36,8 @@ def draw_line(r_screen, x1, y1, x2, y2, color_of_drawing, thickness):
             quit()
 
     return r_screen
+def save_as_image(r_screen):
+    pass
+
+def save_as_pdf():
+    pass

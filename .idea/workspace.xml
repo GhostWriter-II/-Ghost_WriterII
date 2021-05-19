@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5505361-6515-4a1f-afef-a93adca1e772" name="Default Changelist" comment="" />
+    <list default="true" id="a5505361-6515-4a1f-afef-a93adca1e772" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GhostWritterII/OCR/OCR.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/Draw/Cv2_Draw/Open_CV.py" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/Draw/Cv2_Draw/Open_CV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/Draw/Pygame_Draw/PyGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/Draw/Pygame_Draw/PyGame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/GUI/UI.py" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/GUI/UI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/Tracking/Mobilenet/40000_iteration_specificPencil_model.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/Tracking/Mobilenet/mobilenet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/Tracking/Tracking_Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/Tracking/Tracking_Controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/Tracking/YOLO_V4/YOLO_v4-tiny.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/Tracking/YOLO_V4/YOLO_v4_training_last.weights" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/Tracking/YOLO_V4/YOLO_v4_training_last2.weights" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/Tracking/YOLO_V4/detect distance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/Tracking/YOLO_V4/realsense_depth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/Tracking/YOLO_V4/yolo_v4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/Tracking/YOLO_V5/yolo_v5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +35,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -57,24 +76,30 @@
       <option name="presentableId" value="Default" />
       <updated>1611587386427</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adding updated project from mina laptop on github">
+      <created>1617788483007</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617788483007</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1515" height="214" key="GridCell.Tab.0.bottom" timestamp="1611587430454">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1611587430454" />
-    <state width="1515" height="214" key="GridCell.Tab.0.center" timestamp="1611587430454">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="214" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1611587430454" />
-    <state width="1515" height="214" key="GridCell.Tab.0.left" timestamp="1611587430454">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="214" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1611587430454" />
-    <state width="1515" height="214" key="GridCell.Tab.0.right" timestamp="1611587430454">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state width="1515" height="214" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1611587430454" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding updated project from mina laptop on github" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding updated project from mina laptop on github" />
   </component>
 </project>

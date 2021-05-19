@@ -42,16 +42,13 @@ def get_draw_type():
 
 def get_model():
     while True:
-        model_number = int(input("Select Model type\n 1 - YOLO_V4 \n"))
+        model_number = int(input("Select Model type\n 1 - pencil object \n 2 - marker object \n"))
         if model_number == 1:
             model_type = 1
             break
-        # elif model_number == 2:
-        #     model_type = 2
-        #     break
-        # elif model_number == 3:
-        #     model_type = 3
-        #     break
+        elif model_number == 2:
+            model_type = 2
+            break
         else:
             print("Invalid Input, Please Enter again correctly\n")
     return model_type
