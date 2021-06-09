@@ -1,8 +1,6 @@
 import numpy as np
 import cv2
-
-from PIL import Image
-from PyPDF2 import PdfFileReader, PdfFileWriter
+import os
 """
 def click_to_clear(event,x,y,flags,param):
     if event == cv2.EVENT_LBUTTONDOWN:
@@ -37,8 +35,10 @@ def draw_line(paint_window, xp, yp, x, y, color_of_drawing, thickness):
     # cv2.setMouseCallback('image', click_to_clear)
 
 
-def save_as_image(paint_window):
-    pass
+def save_as_image(paint_window,imageNum):
+    file_dir = os.path.dirname(os.path.realpath('_file_'))
+    path = os.path.join(file_dir, 'Results\\IMAGE\\')
+    path = os.path.join(path, "page_"+str(imageNum)+".png")
+    cv2.imwrite(path, paint_window)
 
-def save_as_pdf():
-    pass
+
