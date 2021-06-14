@@ -3,6 +3,7 @@ from tkinter import ttk
 from GhostWritterII.Tracking import Tracking_Controller as Tc
 from GhostWritterII.Camera import CameraConnection as Cc
 from GhostWritterII.Draw import Draw_Controller as Dr
+from GhostWritterII.OCR import OCR
 import os
 import img2pdf
 
@@ -186,8 +187,22 @@ def UI():
         pdf = open(pdfpath, 'wb')
         pdf.write(img2pdf.convert(imagepaths))
     # Button OCR
-    ocr = Button(window, text="Apply OCR", height=1, width=10)
+    ocr = Button(window, text="Apply OCR", height=1, width=10,command=lambda: applyOCR())
     ocr.grid(row=counter, column=2, padx=(0, 10))
+    def applyOCR():
+        file_dir = os.path.dirname(os.path.realpath('_file_'))
+        txtpath = os.path.join(file_dir, 'Results\\TXT\\pages.txt')
+        imagepath = os.path.join(file_dir, 'Results\\IMAGE\\')
+        imagenames = os.listdir(imagepath)
+        imagetexts ="\n\t----------------image 1 content-----------\n"
+        imgnum=1
+        for image in imagenames:
+            imagetexts+=OCR.OCR(os.path.join(imagepath, image))
+            imgnum+=1
+            imagetexts+="\n\n\t----------------image "+str(imgnum)+" content-----------\n"
+        print(imagetexts)
+        txt = open(txtpath, 'w')
+        txt.write(imagetexts)
 
     window.mainloop()
 

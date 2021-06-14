@@ -20,18 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5505361-6515-4a1f-afef-a93adca1e772" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Ghost_WriterII.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ghost_WriterII.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GhostWritterII/Camera/CameraConnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/Camera/CameraConnection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GhostWritterII/Camera/Depth_Camera/Depth_Camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/Camera/Depth_Camera/Depth_Camera.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GhostWritterII/Draw/Cv2_Draw/Open_CV.py" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/Draw/Cv2_Draw/Open_CV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GhostWritterII/Draw/Draw_Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/Draw/Draw_Controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GhostWritterII/GUI/UI.py" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/GUI/UI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GhostWritterII/Tracking/MarkerModel/object_detaction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GhostWritterII/Tracking/PencilModel/object_detaction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GhostWritterII/Tracking/Tracking_Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/Tracking/Tracking_Controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GhostWritterII/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GhostWritterII/OCR/OCR.py" beforeDir="false" afterPath="$PROJECT_DIR$/GhostWritterII/OCR/OCR.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
