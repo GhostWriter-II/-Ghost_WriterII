@@ -50,6 +50,7 @@ def tracking_object(data):
     cameraConnection=data['cameraConnection']
     cameraValue=data['cameraValue']
     draw=data['draw']
+    font_scale=data['font']
     lineColor=data['lineColor']
     thickness=data['thickness']
     model=data['model']
@@ -119,7 +120,7 @@ def tracking_object(data):
                     #         t=depth_frame[y+wi, x+he]-250
                     #         if 0<t<z :
                     #             z=t
-                    z=int(z*2.5)
+                    z=int(z*font_scale)
 
                     cv2.circle(depth_frame, point, 5, (255, 255, 255), 4)
                     cv2.circle(frame, (x,miny), 5, (0, 0, 255), 4)

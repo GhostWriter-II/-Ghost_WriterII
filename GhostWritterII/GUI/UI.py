@@ -1,9 +1,9 @@
 from tkinter import *
 from tkinter import ttk
-from GhostWritterII.Tracking import Tracking_Controller as Tc
-from GhostWritterII.Camera import CameraConnection as Cc
-from GhostWritterII.Draw import Draw_Controller as Dr
-from GhostWritterII.OCR import OCR
+from Tracking import Tracking_Controller as Tc
+from Camera import CameraConnection as Cc
+from Draw import Draw_Controller as Dr
+from OCR import OCR
 import os
 import img2pdf
 
@@ -50,12 +50,9 @@ def color_(color):
         'Red': (0,0,255),
         'Green': (0,255,0),
         'Blue': (255,0,0),
-        'Yellow':(0,255,255),
-        'Orange': (0,128,255),
-        'Purple':(128,0,128),
-        'Black': (0,0,0),
-        'White': (255,255,255)
-
+        'Yellow': (0,255,255),
+        'Purple': (128,0,128),
+        'Black': (0,0,0)
     }
     return switcher.get(color,(255,0,0) )
 
@@ -63,7 +60,7 @@ def color_(color):
 def UI():
     counter = 0
     window = Tk()
-    window.geometry("390x320")
+    window.geometry("390x350")
     window.resizable(0, 0)
     window.title("Ghost Writer")
 
@@ -118,12 +115,27 @@ def UI():
     counter = counter + 1
     Label(window, text="Optional").grid(row=counter, column=1)
 
+    # font
+    def fontmenu(*arg):
+        c = camera_variable.get()
+        if c == "Depth Camera":
+            font.config(state=DISABLED)
+        else:
+            font.config(state=NORMAL)
+
+    counter = counter + 1
+    Label(window, text="Select The font").grid(row=counter, column=0)
+    font_choices = ['1','1.5', '2', '2.5', '3', '3.5', '4']
+    font_variable = StringVar(window)
+    font = ttk.OptionMenu(window, font_variable, "Select", *font_choices,command=fontmenu)
+    font.grid(row=counter, column=2)
+    font_variable.set("2.5")
+
     # Color
     counter = counter + 1
     Label(window, text="Select The Color").grid(row=counter, column=0)
-    color_choices = ['Red',  'Green', 'Blue', 'Yellow', 'Orange','Purple','Black', 'White']
+    color_choices = ['Red',  'Green', 'Blue', 'Yellow', 'Purple','Black']
     color_variable = StringVar(window)
-    color_variable.set('Select')
     color = ttk.OptionMenu(window, color_variable, "Select", *color_choices)
     color.grid(row=counter, column=2)
     color_variable.set("Red")
@@ -150,6 +162,7 @@ def UI():
         print(camera_value.get())
         print(thick_variable.get())
         print(color_variable.get())
+        print(font_variable.get())
 
         cameraConnection,cameravalue = camera_(camera_variable.get(),camera_value.get())
         model= model_(model_variable.get())
@@ -159,6 +172,7 @@ def UI():
         data['cameraValue']=cameravalue
         data['model']=model
         data['draw']=draw
+        data['font'] = float(font_variable.get())
         data['thickness']=int(thick_variable.get())
         data['lineColor']=color_(color_variable.get())
 

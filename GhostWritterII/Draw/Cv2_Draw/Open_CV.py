@@ -32,7 +32,6 @@ def draw_line(paint_window, xp, yp, x, y, color_of_drawing, thickness):
 
     cv2.line(paint_window, (xp, yp), (x, y), color_of_drawing, thickness)
     cv2.imshow("OpenCV", paint_window)
-    # cv2.setMouseCallback('image', click_to_clear)
 
 
 def save_as_image(paint_window,imageNum):
