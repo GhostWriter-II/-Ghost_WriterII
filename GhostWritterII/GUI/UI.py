@@ -40,8 +40,6 @@ def draw_(draw_value):
     draw_ty=0
     if draw_value == "OpenCV":
         draw_ty = 1
-    elif draw_value == "PyGame":
-        draw_ty = 2
     else:
         print("Nothing")
     return Dr.draw_on_window(draw_ty)
@@ -103,7 +101,7 @@ def UI():
     # Draw
     counter = counter + 1
     Label(window, text="Select Draw Type").grid(row=counter, column=0)
-    draw_choices = ['OpenCV', 'PyGame']
+    draw_choices = ['OpenCV']
     draw_variable = StringVar(window)
     draw = ttk.OptionMenu(window, draw_variable, "Select", *draw_choices)
     draw.grid(row=counter, column=2)
