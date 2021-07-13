@@ -114,18 +114,11 @@ def UI():
     Label(window, text="Optional").grid(row=counter, column=1)
 
     # font
-    def fontmenu(*arg):
-        c = camera_variable.get()
-        if c == "Depth Camera":
-            font.config(state=DISABLED)
-        else:
-            font.config(state=NORMAL)
-
     counter = counter + 1
     Label(window, text="Select The font").grid(row=counter, column=0)
     font_choices = ['1','1.5', '2', '2.5', '3', '3.5', '4']
     font_variable = StringVar(window)
-    font = ttk.OptionMenu(window, font_variable, "Select", *font_choices,command=fontmenu)
+    font = ttk.OptionMenu(window, font_variable, "Select", *font_choices)
     font.grid(row=counter, column=2)
     font_variable.set("2.5")
 
