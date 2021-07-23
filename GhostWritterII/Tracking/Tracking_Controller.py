@@ -1,6 +1,9 @@
 
+import cv2
+import time
+import os
 
-def tracking_controller(data):
+def tracking_controller(data): #select the model
     file_dir = os.path.dirname(os.path.realpath('__file__'))
     if data['model'] == "pencil":
         model = os.path.join(file_dir, 'Tracking\\PencilModel\\YOLO_v4_training_last.weights')
@@ -15,11 +18,9 @@ def tracking_controller(data):
         data['modelConfigurationPath']=model_configuration
         tracking_object(data)
 
-import cv2
-import time
-import os
-def object_detaction(net,output_layers,frame,width,height):
-    # Detecting objects
+
+def object_detaction(net,output_layers,frame,width,height): # Detecting object in the frame
+
     blob = cv2.dnn.blobFromImage(frame, 0.00392, (320, 320), (0, 0, 0), True, crop=False)
     net.setInput(blob)
     outs = net.forward(output_layers)
@@ -45,6 +46,7 @@ def object_detaction(net,output_layers,frame,width,height):
 
 def tracking_object(data):
 
+    #fetch the input data
     modelpath=data['modelFilePath']
     configurationPath=data['modelConfigurationPath']
     cameraConnection=data['cameraConnection']
@@ -54,99 +56,109 @@ def tracking_object(data):
     lineColor=data['lineColor']
     thickness=data['thickness']
     model=data['model']
-    net = cv2.dnn.readNet(modelpath,configurationPath )
 
+    #load the model
+    net = cv2.dnn.readNet(modelpath,configurationPath )
     net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
     net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
-
     layer_names = net.getLayerNames()
     output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 
+    #get the camera connection
     camera = cameraConnection.cameraInit(cameraValue)
     frame,depth_frame = cameraConnection.get_frame(camera)
     frame = cv2.resize(frame, (640, 480))
     height, width, _ = frame.shape
-    screen = draw.screen(height, width)
 
+    #create the virtual paper
+    screen = draw.screen(height, width)
     font = cv2.FONT_HERSHEY_PLAIN
+
+    #for calculate the Frame per second
     starting_time = time.time()
     frame_id = 0
 
-    prv_x = 0
-    prv_z = 0
-    prv_y = 0
-    first_point = 0
-    miny=200
-    maxz=500
-    minz=250
-    imageNum=1
+    prv_x = 0 #previous x
+    prv_y = 0 #previous y
+    prv_z = 0 #previous z
+
+    first_point = True # flag for if the point is the first
+
+    miny=200 # no write
+    maxz=500 # max depth number
+    minz=250 # min distance between the object and the camera
+    imageNum=1 # for count the page numpers
+
+    # the distance between the camera and the sensor
     depthPoint=20
     if model=="marker":
         depthPoint=10
+
     while True:
-        frame,depth_frame = cameraConnection.get_frame(camera)
+        frame,depth_frame = cameraConnection.get_frame(camera) #get frame from the camera
         frame = cv2.resize(frame, (640, 480))
-        #frame=cv2.flip(frame,1)
-        #depth_frame=cv2.flip(depth_frame,1)
+
         frame_id += 1
-        #height, width, _ = frame.shape
         key = cv2.waitKey(1)
-        if key& 0xFF == ord('c') or key& 0xFF == ord('C'):
+        if key& 0xFF == ord('c') or key& 0xFF == ord('C'): #clear
             screen = draw.clear(height, width)
             print("clear")
-        if key& 0xFF == ord('q') or key& 0xFF == ord('Q'):
+        if key& 0xFF == ord('q') or key& 0xFF == ord('Q'): #Quit
             print("quit")
             break
-        if key& 0xFF == ord('s') or key& 0xFF == ord('S'):
+        if key& 0xFF == ord('s') or key& 0xFF == ord('S'): #save image
             draw.save_as_image(screen,imageNum)
             imageNum+=1
             print("save")
 
+        #detect the object
         confidences, boxes, indexes =object_detaction(net,output_layers,frame,width,height)
 
         for i in range(len(boxes)):
             if i in indexes:
                 x, y, w, h = boxes[i]
                 confidence = confidences[i]
-                if cameraValue=="":
-                    if key & 0xFF == ord('e') or key & 0xFF == ord('E'):
+
+
+                if cameraValue=="": #3D write noemal write
+
+
+                    if key & 0xFF == ord('e') or key & 0xFF == ord('E'): #stapshot
                         miny=y-10
                         print("set snapshot")
                     point = (x-depthPoint, y)
-                    z=depth_frame[point[1],point[0]]-minz
-                    #z = 100000
-                    # for wi in range(w):
-                    #     for he in range(h):
-                    #         t=depth_frame[y+wi, x+he]-250
-                    #         if 0<t<z :
-                    #             z=t
-                    z=int(z*font_scale)
+                    z=depth_frame[point[1],point[0]]-minz #get the depth point
+
+                    z=int(z*font_scale) # scale the z pont font size
 
                     cv2.circle(depth_frame, point, 5, (255, 255, 255), 4)
                     cv2.circle(frame, (x,miny), 5, (0, 0, 255), 4)
                     cv2.circle(frame, (x, y), 5, (255, 0, 0), 4)
 
-                    if first_point == 0:
+                    if first_point == True:
                         prv_x = x
                         prv_z=z
-                        first_point = first_point + 1
+                        first_point = False
 
                     cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 255), 2)
                     cv2.putText(frame, model + " " + str(round(confidence, 2)), (x, y + 70), font, 3, (255, 255, 255), 2)
-                    if y<miny:
+
+                    if y<miny: # no write
                         prv_x=0
                         prv_z=0
-                        first_point=0
-                    elif y >= miny and (maxz>z>0 and maxz>prv_z >0):
+                        first_point=True
+                    elif y >= miny and (maxz>z>0 and maxz>prv_z >0): #virtual paper draw
                         print("X: " + str(x))
                         print("Y: " + str(y))
                         print("z: " + str(z))
                         draw.draw_line(screen, width-prv_x, prv_z, width-x, z, lineColor,thickness)
                         prv_x = x
                         prv_z = z
-                else:
+
+
+                else: #2d write draw on air
                     cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 255), 2)
-                    cv2.putText(frame, "pencil" + " " + str(round(confidence, 2)), (x, y + 70), font, 3,
+                    cv2.putText(frame, model + " " + str(round(confidence, 2)), (x, y + 70), font, 3,
                                 (255, 255, 255), 2)
                     if first_point == 0:
                         prv_x =x

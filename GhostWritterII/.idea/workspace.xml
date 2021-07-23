@@ -21,9 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="9266e62a-7521-4221-9b6b-e460851e1df7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Draw/Cv2_Draw/Open_CV.py" beforeDir="false" afterPath="$PROJECT_DIR$/Draw/Cv2_Draw/Open_CV.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Draw/Draw_Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Draw/Draw_Controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Draw/Pygame_Draw/PyGame.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI/UI.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/UI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OCR/OCR.py" beforeDir="false" afterPath="$PROJECT_DIR$/OCR/OCR.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tracking/MarkerModel/YOLO_v4_training_last.weights" beforeDir="false" afterPath="$PROJECT_DIR$/Tracking/MarkerModel/YOLO_v4_training_last.weights" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tracking/Tracking_Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tracking/Tracking_Controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

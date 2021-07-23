@@ -1,5 +1,5 @@
 
-from ..Depth_Camera import realsense_depth as rs
+from Camera.Depth_Camera import realsense_depth as rs
 def cameraInit(_):
     return rs.DepthCamera()
 

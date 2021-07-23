@@ -7,7 +7,8 @@ from OCR import OCR
 import os
 import img2pdf
 
-def model_(model_value):
+
+def model_(model_value):# get model type
     model_type=0
     if model_value == "Pencil":
         model_type = 'pencil'
@@ -18,7 +19,7 @@ def model_(model_value):
     return model_type
 
 
-def camera_(camera_choose,value):
+def camera_(camera_choose,value):# get camera type
     camera_connection=0
     camera_value=0
     if camera_choose == "LapTop Camera":
@@ -36,13 +37,16 @@ def camera_(camera_choose,value):
     return camera_connection,camera_value
 
 
-def draw_(draw_value):
-    draw_ty=0
+def draw_(draw_value):# get the virtual paper
+    draw_ty="OpenCv"
+    window=None
     if draw_value == "OpenCV":
-        draw_ty = 1
+
+        window=Dr.draw_on_window("OpenCv")
     else:
         print("Nothing")
-    return Dr.draw_on_window(draw_ty)
+    return window
+
 def color_(color):
     switcher = {
         'Red': (0,0,255),
@@ -90,7 +94,7 @@ def UI():
     camera_variable = StringVar(window)
     camera = ttk.OptionMenu(window, camera_variable, "Select", *camera_choices, command=cameradata)
     camera.grid(row=counter, column=2)
-    camera_variable.set('LapTop Camera')
+    camera_variable.set('Depth Camera')
 
     # Camera value
     counter = counter + 1
@@ -114,18 +118,11 @@ def UI():
     Label(window, text="Optional").grid(row=counter, column=1)
 
     # font
-    def fontmenu(*arg):
-        c = camera_variable.get()
-        if c == "Depth Camera":
-            font.config(state=DISABLED)
-        else:
-            font.config(state=NORMAL)
-
     counter = counter + 1
     Label(window, text="Select The font").grid(row=counter, column=0)
     font_choices = ['1','1.5', '2', '2.5', '3', '3.5', '4']
     font_variable = StringVar(window)
-    font = ttk.OptionMenu(window, font_variable, "Select", *font_choices,command=fontmenu)
+    font = ttk.OptionMenu(window, font_variable, "Select", *font_choices)
     font.grid(row=counter, column=2)
     font_variable.set("2.5")
 

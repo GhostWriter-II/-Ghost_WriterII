@@ -2,7 +2,7 @@ import http.client
 import mimetypes
 from codecs import encode
 import json
-def OCR(image):
+def OCR(image): # input image output text
     conn = http.client.HTTPSConnection("pen-to-print-handwriting-ocr.p.rapidapi.com")
     dataList = []
     boundary = 'wL36Yn8afVp8Ag7AmP8qZ0SA4n1v9T'
