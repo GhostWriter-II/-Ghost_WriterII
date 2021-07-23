@@ -60,7 +60,8 @@ def tracking_object(data):
     #load the model
     net = cv2.dnn.readNet(modelpath,configurationPath )
     net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
-    net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
+    net.setPreferableTarget(cv2.dnn.DNN_TARGET_OPENCL)
+
     layer_names = net.getLayerNames()
     output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 
