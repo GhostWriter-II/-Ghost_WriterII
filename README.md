@@ -7,13 +7,11 @@
 * [General info](#general-info)
 * [Implementation](#implementation)
 * [Project Document](#project-document)
-* [Project Diagrams](#project-Diagrams)
 * [Results](#Results)
 * [Authors](#authors)
 
 ## General info
  
-
 
 ## Implementation
 We used:
@@ -29,14 +27,10 @@ We made out own dataset:
   - This document contains all our work with diagrams, implementation details and resources.
   [GhostWriter.pdf](https://github.com/GhostWriter-II/-Ghost_WriterII/files/7116272/GhostWriter.pdf)
 
-  
-## Project Diagrams
-
+## Results
 https://user-images.githubusercontent.com/36447147/132223357-af5f0375-862e-48f7-850b-74ab5ae37a9d.mp4
 
 https://user-images.githubusercontent.com/36447147/132223373-10c313e6-89e0-43aa-b4bb-a5ff34932bde.mp4
-
-## Results
 
 ## Authors
 * **Peter Malak**  - [petermalak](https://github.com/petermalak)
