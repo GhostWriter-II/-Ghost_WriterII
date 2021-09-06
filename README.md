@@ -19,7 +19,7 @@ We used:
    - Open cv python library.
    - Intel 3D camera Intel® RealSense™ SDK 2.0.
    
-We made out own dataset:
+We made our own custimized dataset:
    - Marker dataset: 4268 image [Marker dataset](https://drive.google.com/drive/folders/1sxMe4sP_aKNNyPRwAyaWUwnbNivY54cC?usp=sharing)
    - Pencil dataset: 7481  image [Pencil dataset](https://drive.google.com/drive/folders/1o49rMDHJ0bc882gAAPcRNmnDesrJU1NM?usp=sharing)
  
